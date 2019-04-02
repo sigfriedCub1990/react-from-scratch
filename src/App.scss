@@ -1,0 +1,32 @@
+.App {
+  &__title {
+    font-family: 'Georgia';
+    font-size: 2rem;
+  }
+
+  &__counter {
+    font-family: monospace;
+    font-size: 1.5rem;
+
+    &.App__counter--warning {
+      color: rgba(255, 0, 0, 0.5);
+    }
+  }
+
+  &__button {
+    font-family: monospace;
+    font-size: 1.5rem;
+    padding: 20px;
+    border: transparent;
+    color: black;
+
+    &.App__button--plus {
+      background-color: rgba(0, 255, 0, 0.5);
+    }
+
+    &.App__button--minus {
+      background-color: rgba(255, 0, 0, 0.5);
+      margin-left: 5px;
+    }
+  }
+}
