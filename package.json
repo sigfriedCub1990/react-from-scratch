@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": ""
+    "build": "webpack",
+    "dev": "webpack --mode development"
   },
   "author": "sigfried",
   "license": "MIT",
-  "repository": "git@github.com:sigfriedCub1990/react-from-scratch.git"
+  "repository": "git@github.com:sigfriedCub1990/react-from-scratch.git",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
 }
