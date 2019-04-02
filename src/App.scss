@@ -29,4 +29,10 @@
       margin-left: 5px;
     }
   }
+
+  &__something {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

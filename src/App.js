@@ -11,17 +11,13 @@ class App extends React.Component {
     count: 0
   }
 
-  componentDidMount() {
-    // eslint-disable-next-lint
-    console.log('Did mount');
-  }
+  componentDidMount() {}
 
   render() {
     return (
       <div className="App">
         <h1 className="App__title">Is stateful?</h1>
-        <img src="./logo.png" alt="Company logo" />
-        <h2
+        <h1
           className={
             this.state.count < 10
               ? 'App__counter'
@@ -29,7 +25,7 @@ class App extends React.Component {
           }
         >
           Count: {this.state.count}
-        </h2>
+        </h1>
         <button
           className="App__button App__button--plus"
           onClick={() => this.setState(state => ({ count: state.count + 1 }))}
@@ -49,6 +45,7 @@ class App extends React.Component {
             <Warning />
           </React.Suspense>
         )}
+        <div className="App__something" />
       </div>
     )
   }
