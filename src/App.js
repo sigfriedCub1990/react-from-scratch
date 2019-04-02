@@ -10,11 +10,17 @@ class App extends React.Component {
   state = {
     count: 0
   }
+
+  componentDidMount() {
+    // eslint-disable-next-lint
+    console.log('Did mount');
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="App__title">Is stateful?</h1>
-        <img src="./logo.png" alt="Company logo"/>
+        <img src="./logo.png" alt="Company logo" />
         <h2
           className={
             this.state.count < 10
