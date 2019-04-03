@@ -9,7 +9,7 @@
     font-size: 1.5rem;
 
     &.App__counter--warning {
-      color: rgba(255, 0, 0, 0.5);
+      color: rgba(231, 0, 0, 1); 
     }
   }
 
@@ -35,4 +35,8 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+.warning {
+  color: rgba(231, 0, 0, 1); 
 }
